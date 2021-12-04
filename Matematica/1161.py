@@ -4,7 +4,5 @@ def factorial(n):
         produto *= i
     return produto
     
-e1 = int(input())
-e2 = int(input())
-
-print(factorial(e1) + factorial(e2))
+entrada = input().split()
+print(factorial(int(entrada[0])) + factorial(int(entrada[1])))
