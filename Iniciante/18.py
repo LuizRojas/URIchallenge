@@ -1,16 +1,12 @@
 # ler o valor inteiro
-entrada = int(input())
+numero = int(input())
+print(numero)
 
-# dividir o maximo possivel para notas de 100
-cem = int(entrada / 100)
-entrada = entrada - (cem * 100)
+lista = (100, 50, 20, 10, 5, 2, 1)
 
-# dividir o maximo possivel para notas de 50
+# dividir o maximo possivel para cada nota na lista
+for nota in lista:
+    valor = int(numero / nota)
+    numero = numero - (valor * nota)
 
-# definir uma lista com a quantidade de notas:
-notas = (50, 20, 10, 5, 2, 1)
-
-# e definir o resto de divisao
-resto = (entrada % 100) % 50
-# agora que temos o valor para dividirmos todos os termos, faremos com o restante dos valores
-print(f'Notas de 100: {cem}\nNotas de 50: {resto}')
+    print(f'{valor} nota(s) de R$ {nota},00')
