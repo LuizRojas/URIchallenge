@@ -1,4 +1,4 @@
-def string_dancante(string) -> str:
+'''def string_dancante(string) -> str:
     string = string.split()
     nova_string = []
     fatia1, fatia2 = string[0], string[1]
@@ -12,4 +12,18 @@ def string_dancante(string) -> str:
 
 
 entrada = str(input())
-print(string_dancante(string=entrada))
+print(string_dancante(string=entrada))'''
+
+iteracoes = int(input())
+
+for i in range(iteracoes):
+    string = str(input()).split()
+    str_combinada = []
+
+    for count, i in enumerate(string[0]):
+        if count % 2 == 0:
+            str_combinada.append(i)
+        else:
+            str_combinada.append(' ')
+    
+    print(str_combinada)
