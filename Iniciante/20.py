@@ -7,6 +7,4 @@ dias = meses % 30
 
 print(meses, dias)
 # imprimir na tela 
-print(
-    f'{anos} ano (s)\n{meses} mes (es)\n{dias} dia (s)'
-)
+print(f'{anos} ano (s)\n{meses} mes (es)\n{dias} dia (s)')
